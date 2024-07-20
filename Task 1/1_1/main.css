@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+.main-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3e3e36e;
+}
+
+.main-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    width: 80%;
+}
+
+.main-section .container .main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-section .container .main-title span {
+    font-weight: bold;
+    background: -webkit-linear-gradient(left, #FF8C00, #FF0080, #8A2BE2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.main-section .container .main-title h1 {
+    text-transform: capitalize;
+    color: #16072f;
+    font-size: 3rem;
+}
+
+.main-section .container .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    height: 400px;
+}
+
+.main-section .container .cards .card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 350px;
+}
+.main-section .container .cards .card:nth-of-type(even){
+    align-self: flex-end;
+}
+.main-section .container .cards .card .card-icon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(130deg, #FF8C00, #FF0080, #8A2BE2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-section .container .cards .card .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+
+}
+
+.main-section .container .cards .card .card-content h3 {
+    text-transform: capitalize;
+    color: #16072f;
+    font-size: 2rem;
+}
+
+.main-section .container .cards .card .card-content p {
+    line-height: 1.7;
+    color: #79767f;
+}
