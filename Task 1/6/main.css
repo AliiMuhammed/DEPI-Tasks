@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+.main-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    width: 80%
+}
+
+.main-section .container .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main-section .container .cards .card {
+    background-color: #424761;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    width: 600px;
+}
+
+.main-section .container .cards .card .image-user {
+    position: absolute;
+    top: -50px;
+}
+
+.main-section .container .cards .card .image-user img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.main-section .container .cards .card .stars {
+    margin-top: 3rem;
+    color: #ffeb00;
+    gap: .5rem;
+    font-size: 1.2rem;
+}
+
+
+.main-section .container .cards .card .card-content p {
+    font-style: italic;
+    font-size: .9rem;
+    color: #dbdbdb;
+    margin-bottom: 2rem;
+}
+
+.main-section .container .cards .card .card-content h3 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+
+}
+
+.main-section .container .cards .card .card-content span {
+    color: #dbdbdb;
+    font-size: 1.1rem;
+}
+
+.main-section .container .cards .card .icon {
+    background-color: #fff;
+    color: red;
+    padding: .5rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    right: 20%;
+    top: 90%;
+    border: #00000060 solid 1px;
+}
+
+.main-section .container .bullets-points {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem
+}
+
+.main-section .container .bullets-points span {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    display: block;
+}
+
+.main-section .container .bullets-points span.active {
+    background-color: #fff;
+}
+
+.main-section .container .main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.main-section .container .main-title span {
+    color: #adadad;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.main-section .container .main-title h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    line-height: 1;
+}
