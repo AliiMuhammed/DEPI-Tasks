@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #5c5d5c;
+    font-family: "Cairo", sans-serif;
+}
+
+.main-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    width: 80%;
+}
+
+.main-section .container .main-title {
+    position: relative;
+}
+
+.main-section .container .main-title::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background-color: #ffbc13;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.main-section .container .main-title h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.main-section .container .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 2rem;
+}
+
+.main-section .container .cards .card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem
+}
+
+.main-section .container .cards .card .card-icon {
+    background-color: #ffbc13;
+    padding: 1.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-section .container .cards .card .card-icon i {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.main-section .container .cards .card .card-content h3 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.main-section .container .cards .card .card-content p{
+    line-height: 1.5;
+}
