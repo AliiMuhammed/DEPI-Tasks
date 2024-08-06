@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-section .container {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    width: 65%;
+    gap: 2rem;
+    justify-items: center;
+}
+
+.main-section .container .right {
+    height: 100%;
+}
+
+.main-section .container .right .about-img {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.main-section .container .right .about-img::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #fdc235;
+    z-index: -1;
+}
+
+.main-section .container .right .about-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-section .container .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+
+}
+
+.main-section .container .left .title {
+    font-size: 3.5rem;
+    color: #fdc235;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.main-section .container .left .title span {
+    color: #000;
+    position: relative;
+}
+
+.main-section .container .left .title span::after {
+    content: "";
+    position: absolute;
+    width: 8.5rem;
+    height: 3px;
+    background-color: #fdc235;
+    bottom: -10%;
+    left: 0%;
+}
+
+.main-section .container .left .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem
+}
+
+
+.main-section .container .left .main-content h2 {
+    color: #646464;
+    font-weight: bold;
+}
+
+.main-section .container .left .main-content .description {
+    color: #646464;
+    line-height: 1.5;
+}
+
+.main-section .container .left .main-content .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem
+}
+
+.main-section .container .left .main-content .features .feature {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: #646464;
+    font-weight: bold;
+}
+
+.main-section .container .left .main-content .features .feature i {
+    color: #fdc235;
+}
+
+.main-section .container .left .main-btn {
+    background-color: #fdc235;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    width: 10rem;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
