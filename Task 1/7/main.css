@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-section .container .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    width: 75%;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.card .card-img {
+    width: 100%;
+    height: 230px;
+}
+
+.card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.card .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 2rem;
+}
+
+.card .card-body .feedback-save {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card .card-body .feedback-save .feedback-stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.card .card-body .feedback-save .stars {
+    color: #ffa121;
+}
+
+.card .card-body .feedback-save .feedback-stars .reviews {
+    color: #878a93;
+    font-weight: 400;
+}
+
+.card .card-body .feedback-save .save-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dbdbdb;
+}
+
+.card .card-body .card-title {
+    width: 100%;
+}
+
+
+.card .card-body .card-title h1 {
+    font-size: 1.4rem;
+}
+
+.card .card-body .lessons-stu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card .card-body .lessons-stu div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: .5rem .8rem;
+    background-color: #f1f1f1;
+    color: #727272;
+    font-size: .9rem;
+}
+
+.card .card-body .lessons-stu .lessons {
+    border-right: 1px solid #7272725b;
+}
+
+.card .card-body .card-desc {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #727272;
+}
+
+.card .card-body .instructor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+.card .card-body .instructor .instructor-name span {
+    color: #727272;
+}
+
+.card .card-body .instructor .instructor-img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.card .card-body .instructor .instructor-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #dbdbdb;
+}
+
+.card .card-footer .price {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #cf0026;
+}
+
+.card .card-footer .price del {
+    color: #727272;
+    margin-right: .5rem;
+}
+
+.card .card-footer .card-link a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: .5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #727272;
+}
