@@ -4,81 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Team</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .doctors-section {
-            text-align: center;
-            padding: 50px 0;
-        }
-        .doctors-section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        .doctors-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .doctor-card {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 250px;
-            padding: 20px;
-            text-align: center;
-        }
-        .doctor-card img {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-        .doctor-card h3 {
-            font-size: 1.2em;
-            margin: 10px 0 5px;
-        }
-        .doctor-card p {
-            color: #666;
-            margin: 0;
-        }
-        .doctor-card .specialty {
-            font-size: 0.9em;
-            color: #007bff;
-            margin-top: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <section class="doctors-section">
-        <h2>We provide Exceptional Medical Care For Our Patients</h2>
-        <div class="doctors-container">
-            <div class="doctor-card">
-                <img src="https://via.placeholder.com/100" alt="Dr. Ken Moris">
-                <h3>Dr. Ken Moris</h3>
-                <p>Clinical Surgery</p>
+    <section class="main-section">
+        <div class="container">
+            <div class="main-header">
+                <div class="title">
+                    our doctors
+                </div>
+                <h1>We provide Exceptional Medical Care For Our Patients</h1>
+
             </div>
-            <div class="doctor-card">
-                <img src="https://via.placeholder.com/100" alt="Dr. Michel Jhonson">
-                <h3>Dr. Michel Jhonson</h3>
-                <p>Orthopedic</p>
-            </div>
-            <div class="doctor-card">
-                <img src="https://via.placeholder.com/100" alt="Dr. Luiz Frank">
-                <h3>Dr. Luiz Frank</h3>
-                <p>Cardiology</p>
-            </div>
-            <div class="doctor-card">
-                <img src="https://via.placeholder.com/100" alt="Dr. Selina Gomez">
-                <h3>Dr. Selina Gomez</h3>
-                <p>Neurosurgery</p>
+            <div class="doctors">
+                <div class="doctor-card">
+                    <div class="card-img">
+                        <img src="./1.jpg" alt="Dr. Ken Moris">
+                    </div>
+                    <div class="card-body">
+                        <h3>Dr. Ken Moris</h3>
+                        <p>Clinical Surgery</p>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <div class="card-img">
+                        <img src="./2.jpg" alt="Dr. Michel Jhonson">
+                    </div>
+                    <div class="card-body">
+                        <h3>Dr. Michel Jhonson</h3>
+                        <p>Orthopedic</p>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <div class="card-img">
+                        <img src="./3.jpg" alt="Dr. Luiz Frank">
+                    </div>
+                    <div class="card-body">
+                        <h3>Dr. Luiz Frank</h3>
+                        <p>Cardiology</p>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <div class="card-img">
+                        <img src="./4.jpg" alt="Dr. Selina Gomez">
+                    </div>
+                    <div class="card-body">
+                        <h3>Dr. Selina Gomez</h3>
+                    <p>Neurosurgery</p>
+                    </div>
+                </div>
             </div>
         </div>
+        
     </section>
 </body>
 </html>

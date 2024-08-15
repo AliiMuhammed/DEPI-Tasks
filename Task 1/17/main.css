@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+.main-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    width: 80%
+}
+
+.main-section .container .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: center;
+}
+
+.main-section .container .main-header .title {
+    color: #ff677d;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.main-section .container .main-header h1 {
+    font-size: 2rem;
+    width: 60%;
+    line-height: 1.4;
+    color: #002856;
+    font-weight: 700;
+}
+
+.main-section .container .doctors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    width: 85%;
+}
+
+.main-section .container .doctors .doctor-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.116);
+}
+
+.main-section .container .doctors .doctor-card .card-img {
+    width: 100%;
+    height: 300px;
+
+}
+
+.main-section .container .doctors .doctor-card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-section .container .doctors .doctor-card .card-body {
+    padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem
+}
+
+.main-section .container .doctors .doctor-card .card-body h3 {
+    font-weight: bold;
+    color: #002856;
+    line-height: 1;
+}
+
+.main-section .container .doctors .doctor-card .card-body p {
+    color: #949494;
+    font-size: .9rem;
+    line-height: 1;
+}
