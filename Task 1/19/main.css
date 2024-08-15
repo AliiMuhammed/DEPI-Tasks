@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+.main-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6rem;
+    width: 80%
+}
+
+.main-section .container .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    position: relative;
+}
+
+.main-section .container .main-header::after {
+    content: "";
+    width: 3rem;
+    height: 2px;
+    background-color: #086ad8;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.main-section .container .main-header::before {
+    content: "";
+    width: 5px;
+    height: 2px;
+    background-color: #086ad8;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.main-section .container .main-header .title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #086ad8;
+}
+
+.main-section .container .main-header h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.main-section .container .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 85%;
+}
+
+.main-section .container .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.main-section .container .cards .card .card-img {
+    width: 100%;
+    height: 400px;
+}
+
+.main-section .container .cards .card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.card .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    position: relative;
+}
+
+.card .card-body .add-btn {
+    position: absolute;
+    bottom: 75%;
+    right: 8%;
+    background-color: #fff;
+    color: #086ad8;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 55px;
+    height: 55px;
+    transform: rotate(45deg);
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.card .card-body .add-btn i {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.card .card-body h3 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    line-height: 1;
+}
+
+.card .card-body p {
+    font-size: 1rem;
+    color: #086ad8;
+    line-height: 1.3;
+    font-weight: bold;
+}
