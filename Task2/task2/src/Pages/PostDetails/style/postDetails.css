@@ -1,0 +1,101 @@
+.post-details .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.post {
+    width: 80%;
+}
+
+.post .post-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    padding: 1rem;
+}
+
+.post .post-top .user {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+.post .post-top .user .user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.post .post-top .user .user-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post .post-body {
+    padding: 1rem;
+}
+
+.post .post-body h1 {
+    font-size: 1.5rem;
+}
+
+.post .post-body p {
+    font-size: 1rem;
+}
+
+.post-btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 1rem;
+    background-color: #f5f5f5;
+}
+
+.post-btns .post-btn {
+    padding: 0.7rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.post-btns .post-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.post-btns .post-btn.active {
+    font-weight: bold;
+}
+
+.post-btns .post-btn svg {
+    margin-right: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.post-btns .post-btn span {
+    text-transform: capitalize;
+}
+
+.post-comments {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
